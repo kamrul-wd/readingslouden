@@ -1,0 +1,34 @@
+.thumbnails {
+	width: 100%;
+	margin: 20px 0 0 0;
+
+	.selected:before {
+		background: rgba(0,0,0,0.2);
+		content: "\2714 ";
+		position: absolute;
+		color: #fff;
+		font-size: 20px;
+		margin: 5px;
+		padding: 0 5px;
+		border-radius: 50%;
+	}
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail {
+	padding: 4px;
+	border: none;
+	border-radius: 2px;
+  	cursor: pointer;
+
+	&.selected {
+		background: $pingala-purple;
+
+		p {
+			color: #fff;
+		}
+	}
+}
+
+ul.thumbnails.image_picker_selector .thumbnail p {
+  	margin-bottom: 0;
+}

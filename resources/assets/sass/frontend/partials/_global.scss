@@ -1,0 +1,293 @@
+@font-face {
+	font-family: 'lacuna';
+	src: url('../../fonts/lacuna-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+
+	1. Body
+	2. Carousel
+	3. Content
+
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: lacuna;
+}
+
+// 1. Body
+// ======================================================
+
+body {
+	font-family: helvetica;
+	-webkit-font-smoothing: antialiased;
+}
+
+// 2. Carousel
+// ======================================================
+
+.carousel-container {
+	position: relative;
+	z-index: 80;
+	margin-top: -70px;
+
+	.carousel-item {
+		height: 380px;
+		background-size: cover;
+		background-position: center bottom;
+	}
+}
+
+@include media-breakpoint-up(md) {
+
+	.carousel-container {
+		margin-top: -115px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+
+	.carousel-container {
+		margin-top: -185px;
+
+		.carousel-item {
+			height: 600px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+
+	.carousel-container {
+		margin-top: -200px;
+
+		.carousel-item {
+			height: 690px;
+		}
+	}
+}
+
+// 3. Content
+// ======================================================
+
+.content {
+	margin: 30px 0;
+	background-color: #eaeaea;
+
+	[class*="col"] {
+		padding: 2.5em 15px;
+	}
+
+	h1 {
+		color: #494a4a;
+	}
+
+	h2,
+	h3,
+	p {
+		color: #606060;
+	}
+
+	h1,
+	h2 {
+		font-size: 32px;
+		margin-bottom: 40px;
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 26px;
+		margin-bottom: 20px;
+		font-family: helvetica;
+	}
+
+	p {
+		font-family: helvetica;
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.services {
+		background: #043c71;
+
+		.inner {
+
+			h2 {
+				color: #fff;
+			}
+
+			a {
+				font-family: $bold-font;
+				text-transform: uppercase;
+				font-size: 26px;
+				color: #fff;
+
+				&.alt {
+					color: #9fd0ff;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+
+	.content {
+
+		h1,
+		h2 {
+			font-size: 40px;
+		}
+
+		.services {
+			padding: 2.5em 35px;
+		}
+
+		.services .inner {
+
+			a {
+				font-size: 26px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+
+	.content {
+
+		.services .inner {
+
+			a {
+				font-size: 36px;
+				line-height: 34px;
+			}
+		}
+	}
+}
+
+// 4. Reviews
+// ======================================================
+
+.reviews {
+	background: #f6932d;
+	padding: 2.5em 0;
+	margin-bottom: 30px;
+	text-align: right;
+
+	.inner {
+		padding: 25px;
+		background: #e88a2a;
+		text-align: left;
+	}
+
+	h2 {
+		color: #fff;
+		margin-bottom: 45px;
+		font-size: 32px;
+		text-align: left;
+	}
+
+	h3 {
+		color: #fff;
+		font-size: 28px;
+	}
+
+	h4 {
+		color: #fff;
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+		color: #fff;
+		line-height: 20px;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+	a {
+		display: inline-block;
+		background: #fff;
+		color: #f6932d;
+		padding: 2px 10px;
+		font-family: $bold-font;
+		font-size: 18px;
+		margin-top: 10px;
+	}
+
+	.item {
+		margin-bottom: 20px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+
+	.reviews {
+
+		h2 {
+			font-size: 40px;
+		}
+
+		.inner {
+			min-height: 270px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+
+	.reviews {
+
+		h3 {
+			font-size: 36px;
+		}
+
+		h4 {
+			font-size: 22px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		.inner {
+			min-height: 285px;
+		}
+	}
+}
+
+// 5. Partners
+// ============================================
+
+.partners {
+	background: #f5f3f4;
+	padding: 2em 0;
+
+	.logo-outer {
+		height: 65px;
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-width: 130px;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@include media-breakpoint-up(lg) {
+
+	.partners {
+
+		.logo-outer {
+			margin-bottom: 0;
+		}
+	}
+}

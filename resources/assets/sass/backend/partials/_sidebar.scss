@@ -1,0 +1,19 @@
+.sidebar {
+  background: #55606b;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .nav-pills .nav-link {
+	color: #fff;
+
+	&:hover {
+	  background: #48525c;
+	}
+
+	&.active {
+	  background: #48525c !important;
+	  cursor: pointer;
+	}
+  }
+}

@@ -1,0 +1,7 @@
+.btn-pingala {
+  @include button-variant($btn-pingala-color, $btn-pingala-bg, $btn-pingala-border);
+}
+
+.btn-darkgrey {
+  @include button-variant($btn-darkgrey-color, $btn-darkgrey-bg, $btn-darkgrey-border);
+}

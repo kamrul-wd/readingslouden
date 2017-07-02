@@ -1,0 +1,31 @@
+// Fonts
+@import "https://fast.fonts.net/cssapi/3edd5a19-bf8b-4037-b3a9-65dd67370436.css";
+
+// Variables
+@import "variables";
+
+// Node_modules
+@import "../../libs/font-awesome/scss/font-awesome";
+@import '../../libs/bootstrap/scss/bootstrap';
+
+@import "../../libs/slick-carousel/slick/slick.scss";
+
+
+// Partials
+//@import "partials/reset";
+//@import "partials/grid";
+@import "partials/global";
+//@import "partials/forms";
+@import "partials/header";
+@import "partials/footer";
+//@import "partials/homepage";
+//@import "partials/internal";
+//@import "partials/owl";
+@import "editor-style/style";
+
+
+
+// Partials
+//@import "partials/global";
+//@import "partials/header";
+//@import "partials/footer";

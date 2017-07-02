@@ -1,0 +1,21 @@
+.service {
+
+	.jumps {
+		background: 0 0;
+		padding-top: 0;
+	}
+
+	.jumps .row {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (min-width: $screen-md-min) {
+	
+	.internal {
+		
+		.testimonial {
+			margin-top: 90px;
+		}
+	}	
+}

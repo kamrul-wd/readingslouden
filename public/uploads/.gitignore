@@ -1,0 +1,8 @@
+*
+images/*
+!images/.gitkeep
+images/thumbnails/*
+!images/thumbnails/.gitkeep
+documents/*
+!documents/.gitkeep
+!.gitignore

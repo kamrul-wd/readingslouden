@@ -1,0 +1,22 @@
+.card .card-overlay {
+  background: rgba(0,0,0,0.7);
+  transition: 0.3s background ease;
+
+  &:hover {
+	background: rgba(121,11,115,0.9);
+  }
+}
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+//.card-columns {
+//  column-count: 5;
+//
+//  .card {
+//    display: inline-block;
+//    width: 60%;
+//  }
+//}

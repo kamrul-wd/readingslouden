@@ -1,0 +1,235 @@
+// 6. Brand Colour Classes
+// ================================
+
+.brand-light-text {
+  h1, h2, h3, h4, h5, h6, p, a, ul, ul li {
+    color: #fff;
+  }
+}
+
+.brand-dark-text {
+  h1, h2, h3, h4, h5, h6, p, a, ul li, ul li {
+    color: #333;
+  }
+
+}
+
+// Primary Pallete
+// ---
+
+.brand-primary-black {
+  background: #222;
+  @extend .brand-light-text;
+}
+
+.brand-primary-white {
+  background: #fff;
+  @extend .brand-dark-text;
+}
+
+.brand-primary-teal {
+  background: #004650;
+  @extend .brand-light-text;
+}
+
+// Secondary Pallete
+// ---
+
+.brand-secondary-purple {
+  background: #451551;
+  @extend .brand-light-text;
+
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-teal {
+  background: #00506a;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-black {
+  background: #0e0e0e;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-darkgrey {
+  background: #393939;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-grey1 {
+  background: #adadad;
+  @extend .brand-dark-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-grey2 {
+  background: #d6d6d6;
+  @extend .brand-dark-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-secondary-grey3 {
+  background: #e9e9e9;
+  @extend .brand-dark-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+// Tertiary Pallete
+// ---
+
+.brand-tertiary-blue1 {
+  background: #233746;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-blue2 {
+  background: #314c60;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-blue3 {
+  background: #517489;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-iceteal {
+  background: #a2bdc1;
+  @extend .brand-dark-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-teal1 {
+  background: #4f7d83;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-teal2 {
+  background: #18646e;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+.brand-tertiary-teal3 {
+  background: #15434a;
+  @extend .brand-light-text;
+  ul{
+    list-style:disc;
+  }
+}
+
+
+// Parallax section
+.parallax_section{
+  position: relative;
+  padding:50px 0px;
+  box-sizing: border-box;
+  transform-style: inherit;
+  overflow:hidden;
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover;
+  z-index:-1;
+
+  p, h1, h2, h3, h4, h5, a {
+    color:#fff;
+  }
+}
+
+
+//Three kitch button section
+
+.three_column .inner{
+  position:relative;
+  margin-bottom:30px;
+
+  a{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: padding 200ms ease;
+    font-family: "Avenir LT W01_55 Roman1475520";
+    text-decoration:none;
+  }
+  a:hover{
+    text-decoration:none;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  a:after{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("/assets/img/frontend/jump-arrow.png");
+    background-size: cover;
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+  }
+}
+
+.slick-list {
+  width: 100%;
+}
+
+@media screen and ( min-width: $screen-sm-min ) {
+  .three_column .inner{
+    margin-bottom:0px;
+  }
+}
+
+@media screen and ( min-width: $screen-md-min ) {
+  .three_column .inner {
+    margin-bottom:0px;
+  }
+
+}
+
+@media screen and ( min-width: $screen-lg-min ) {
+
+  .three_column .inner {
+    margin-bottom:0px;
+  }
+
+}

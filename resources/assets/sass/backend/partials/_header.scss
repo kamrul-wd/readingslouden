@@ -1,0 +1,29 @@
+header.main-header {
+    padding: 20px 0;
+    background: #000;
+    border-bottom: 4px solid #fff;
+}
+
+#site-search {
+    input[type="search"] {
+        background: transparent;
+        border: 1px solid $pingala-purple;
+        color: #fff;
+    }
+}
+
+.sub-header {
+    background-color: $pingala-purple;
+
+    .navbar {
+        //padding: 0;
+
+        .navbar-toggler {
+            padding: 0.7em;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+}

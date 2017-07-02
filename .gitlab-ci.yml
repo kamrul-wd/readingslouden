@@ -1,0 +1,24 @@
+before_script:
+  - git submodule update --init
+  - php -v
+  - git --version
+  - composer self-update
+  - composer --version
+  - composer config --global github-oauth.github.com $GITHUB_TOKEN
+  - composer install --ansi --no-progress --prefer-dist --no-interaction
+  - php artisan env
+  - touch database/testing.sqlite
+  - php artisan migrate --database=testing --env=testing
+
+cache:
+  paths:
+  - vendor/
+
+stages:
+  - test
+
+test:
+  script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpmd app/ text phpmd.xml
+  - vendor/bin/phpcs --standard=psr2 app

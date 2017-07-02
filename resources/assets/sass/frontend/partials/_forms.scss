@@ -1,0 +1,105 @@
+label {
+	display: block;
+	margin-bottom: $form-input-bottom-margin / 2;
+
+	&.inline {
+		display: inline-block;
+
+		+ input {
+			display: inline-block;
+			width: auto;
+		}
+	}
+}
+
+input,
+select,
+textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: $form-input-bottom-margin;
+	font-size: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=search],
+input[type=url],
+select {
+	border: $form-input-border;
+	background: #fff;
+	border-radius: $form-input-border-radius;
+	box-shadow: none;
+	line-height: $form-input-height;
+	height: $form-input-height;
+	padding: $form-input-padding;
+	font-size: 1rem;
+}
+
+textarea {
+	padding: 10px;
+	line-height: 1rem;
+	border: $form-input-border;
+	background: #fff;
+	border-radius: $form-input-border-radius;
+	min-height: 150px;
+}
+
+input[type=text],
+textarea {
+	background: #f9f9f9 !important;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	padding: 0 5px;
+	font-family: 'Avenir LT W01_35 Light1475496', Arial, Verdana;
+	width: 100%;
+}
+
+input[type=text],
+input[type=submit] {
+	height: 42px;
+	line-height: 42px;
+}
+
+textarea {
+	padding: 10px 5px !important;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+label {
+	font-size: 18px;
+	color: #6c6c6c;
+	font-family: 'Avenir LT W01_35 Light1475496', Arial, Verdana;
+}
+
+label span {
+	color: #f00;
+}
+
+input[type=submit] {
+	background: #eee;
+	border: 1px solid #d5d5d5;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #6c6c6c;
+	padding: 0 25px;
+	border-radius: 4px;
+	font-family: 'Avenir LT W01_35 Light1475496', Arial, Verdana;
+	display: inline-block;
+	float: right;
+	width: auto;
+}
+
+.opening-time tr td {
+	padding-bottom: 10px;
+	width: 50%;
+}
+
+.opening-time {
+	margin-bottom: 40px;
+}

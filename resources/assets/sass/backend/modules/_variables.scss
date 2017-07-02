@@ -1,0 +1,25 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== FontAwesome
+//
+//## Set font path
+$fa-font-path: "/assets/fonts";
+
+//== Bootstrap
+//
+
+//== Colors
+//
+//## Purple brand colour for use across Pingala CMS
+$pingala-purple: #901389 !default;
+$pingala-darkgrey: #48525c !default;
+
+$btn-pingala-color:              #fff;
+$btn-pingala-bg:                 $pingala-purple;
+$btn-pingala-border:             $pingala-purple;
+
+$btn-darkgrey-color:              #fff;
+$btn-darkgrey-bg:                 $pingala-darkgrey;
+$btn-darkgrey-border:             $pingala-darkgrey;

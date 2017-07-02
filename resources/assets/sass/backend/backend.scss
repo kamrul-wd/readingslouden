@@ -1,0 +1,27 @@
+@import "modules/variables";
+@import "modules/component-animations";
+
+@import '../../libs/bootstrap/scss/bootstrap';
+@import '../../libs/sweetalert/dev/sweetalert';
+@import '../../libs/font-awesome/scss/font-awesome';
+@import '../../libs/dropzone/dist/dropzone';
+@import '../../libs/image-picker/source/sass/image-picker';
+@import '../../libs/cropper/src/scss/cropper';
+@import 'vendor/grid-editor';
+
+//custom editor style
+@import '../../js/backend/plugins/editor_custom_options_style';
+
+@import "partials/cards";
+@import "partials/header";
+@import "partials/breadcrumb";
+@import "partials/sidebar";
+@import "partials/dropzone";
+@import "partials/accordion";
+@import "partials/thumbnails";
+@import "partials/buttons";
+@import "partials/cursors";
+
+@import "partials/general";
+
+@import "partials/media";
